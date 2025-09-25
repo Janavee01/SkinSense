@@ -4,8 +4,6 @@ SkinSense is a full-stack web application that combines a modern React frontend 
 
 ---
 
----
-
 ## 🏛️ Full-Stack Architecture
 
 The application provides a seamless experience by connecting the frontend and backend through a REST API.
