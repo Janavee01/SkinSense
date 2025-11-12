@@ -3,9 +3,9 @@ from tensorflow.keras.layers import TFSMLayer
 from tensorflow.keras.applications.efficientnet_v2 import preprocess_input
 from PIL import Image
 import numpy as np
-
+import os
 # Load model using TFSMLayer
-model = TFSMLayer("skin_model", call_endpoint="serving_default")
+model = TFSMLayer("../skin_model", call_endpoint="serving_default")
 
 # Class labels from README
 class_labels = [
@@ -25,7 +25,7 @@ def load_image(path):
     return img_array
 
 # Predict
-image_path = "image.webp"  # Make sure this file exists in your folder
+image_path = "../image.webp"  # Make sure this file exists in your folder
 img = load_image(image_path)
 pred = model(img)
 predicted_index = np.argmax(pred)
