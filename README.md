@@ -67,6 +67,9 @@ The backend exposes the power of the machine learning model through a simple and
 
 ## ⚙️ Local Development Setup
 
+## Step 1:
+Clone the repository
+
 To run this full-stack project, you must run both the backend server and the frontend client concurrently.
 
 ### 1. Backend Server Setup
@@ -85,7 +88,7 @@ pip install -r requirements.txt
 
 # Run the Flask API server
 # The server will start on [http://127.0.0.1:5000](http://127.0.0.1:5000)
-python api.py
+python classifier.py
 ```
 **Keep this terminal running.**
 
